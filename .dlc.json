@@ -1,0 +1,24 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^http://localhost"
+    },
+    {
+      "pattern": "^https://github.com/apache/skywalking-java/blob/master/changes/changes-x.y.z.md$"
+    },
+    {
+      "pattern": "^https://dist.apache.org/repos/dist/dev/skywalking/java-agent/x.y.z$"
+    },
+    {
+      "pattern": "^https://dist.apache.org/repos/dist/release/skywalking/java-agent$"
+    }
+  ],
+  "timeout": "10s",
+  "retryOn429": true,
+  "retryCount": 10,
+  "fallbackRetryDelay": "1000s",
+  "aliveStatusCodes": [
+    200,
+    401
+  ]
+}
