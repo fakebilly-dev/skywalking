@@ -138,6 +138,8 @@ public class SkyWalkingAgent {
 
         Runtime.getRuntime()
                 .addShutdownHook(new Thread(ServiceManager.INSTANCE::shutdown, "skywalking service shutdown thread"));
+
+        SnifferConfigInitializer.completePluginInit();
     }
 
     private static class Transformer implements AgentBuilder.Transformer {

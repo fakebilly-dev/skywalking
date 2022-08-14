@@ -26,3 +26,6 @@ doc/
 
 .DS_Store
 logs/
+
+maven-wrapper.jar
+dependency-reduced-pom.xml

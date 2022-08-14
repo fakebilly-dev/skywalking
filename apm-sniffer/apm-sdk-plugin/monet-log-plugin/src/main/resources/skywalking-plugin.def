@@ -1,0 +1,50 @@
+
+#
+# logback
+## async
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.async.AsyncAppenderBaseInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.async.LoggingEventInstrumentation
+
+## logstash
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.logstash.ApplicationNameJsonProviderInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.logstash.HostJsonProviderInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.logstash.TraceIdJsonProviderInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.logstash.TcpSocketAppenderInstrumentation
+
+## log
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.log.GRPCLogAppenderInstrumentation
+
+## mdc
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.mdc.LogbackMDCConverterInstrumentation
+
+## convert
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.convert.ApplicationPatternConverterInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.convert.HostPatternConverterInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.convert.TraceIdPatternConverterInstrumentation
+
+## logback
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.logback.LogbackInstrumentation
+
+#
+# log4j2
+## async
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.async.AsyncAppenderInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.async.AsyncLoggerConfigInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.async.CreateMementoInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.async.Log4jLogEventInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.async.RingBufferLogEventInstrumentation
+
+## log
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.log.GRPCLogAppenderInstrumentation
+
+## mdc
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.mdc.Log4j2MDCConverterInstrumentation
+
+## convert
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.convert.ApplicationNameConverterInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.convert.HostConverterInstrumentation
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.log4j2.convert.TraceIdConverterInstrumentation
+
+#
+# cross
+monet-log-plugin=org.apache.skywalking.apm.plugin.monet.log.cross.ThreadPoolExecutorInstrumentation

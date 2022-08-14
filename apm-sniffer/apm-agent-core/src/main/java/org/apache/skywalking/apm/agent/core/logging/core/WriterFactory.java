@@ -35,7 +35,8 @@ public class WriterFactory {
                 if (WRITER != null) {
                     return WRITER;
                 }
-                if (SnifferConfigInitializer.isInitCompleted() && AgentPackagePath.isPathFound()) {
+                if (SnifferConfigInitializer.isPluginInitCompleted()
+                        && SnifferConfigInitializer.isInitCompleted() && AgentPackagePath.isPathFound()) {
                     if (StringUtil.isEmpty(Config.Logging.DIR)) {
                         try {
                             Config.Logging.DIR = AgentPackagePath.getPath() + "/logs";
